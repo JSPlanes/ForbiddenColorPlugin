@@ -1,0 +1,20 @@
+name: ForbiddenColor
+version: 1.0.0
+main: me.itzbogged.forbiddencolor.ForbiddenColor
+api-version: 1.21
+author: ItzBogged
+description: A lightweight plugin that makes players die when touching forbidden colors
+website: https://github.com/ItzBogged
+softdepend: []
+
+commands:
+  forbiddencolor:
+    description: Set or clear forbidden colors that kill players on contact
+    usage: /forbiddencolor <color|clear>
+    aliases: [fc, forbidcolor]
+    permission: forbiddencolor.admin
+
+permissions:
+  forbiddencolor.admin:
+    description: Allows setting forbidden colors
+    default: op
